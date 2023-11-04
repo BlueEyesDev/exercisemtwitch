@@ -9,11 +9,11 @@ func CanFastAttack(knightIsAwake bool) bool {
 }
 
 func CanSpy(knightIsAwake, archerIsAwake, prisonerIsAwake bool) bool {
-   	return !(!knightIsAwake && !archerIsAwake && !prisonerIsAwake)
+	return !(!knightIsAwake && !archerIsAwake && !prisonerIsAwake)
 }
 
 func CanSignalPrisoner(archerIsAwake, prisonerIsAwake bool) bool {
-    return (!archerIsAwake && prisonerIsAwake)
+	return (!archerIsAwake && prisonerIsAwake)
 }
 
 func CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent bool) bool {
